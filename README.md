@@ -1,35 +1,48 @@
-# React + TypeScript + Vite
+# **Dev Stack Builder**
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Dev Stack Builder is a responsive React website where users can explore technologies and build their own development stack.
 
-Currently, two official plugins are available:
+## **Technologies Used**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+* React Toastify
+* JSON
 
-## React Compiler
+## **Features**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* Explore different technologies.
+* Add and remove technologies from your stack.
+* Fully responsive for mobile, tablet, and desktop.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## **React Questions & Answers**
 
-## Expanding the Oxlint configuration
+### **1. What is JSX?**
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+JSX lets us write HTML-like code inside React.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+### **2. What is the difference between props and state?**
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Props pass data from parent to child. State stores and updates data in a component.
+
+### **3. What does `useState` do?**
+
+`useState` stores and updates data. I used it for the selected stack and mobile menu.
+
+### **4. What does `useEffect` do?**
+
+`useEffect` runs code after the component renders. I used it to load the JSON data.
+
+### **5. Why is `key` needed in `.map()`?**
+
+A unique `key` helps React update list items correctly.
+
+### **6. What is conditional rendering?**
+
+Conditional rendering shows different UI based on a condition. I used it for the empty stack message.
+
+### **7. How does a parent and child communicate?**
+
+A parent sends data with props. A child calls a parent function through props.
