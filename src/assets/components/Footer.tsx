@@ -4,7 +4,6 @@ const Footer = () => {
     return (
         <footer className="w-full border-t border-gray-100 bg-white">
             <div className="mx-auto max-w-[1320px] px-6 py-10 sm:px-8 lg:px-0 lg:py-12">
-
                 <div className="grid grid-cols-1 gap-10 lg:grid-cols-5 lg:gap-16">
 
                     {/* Brand */}
@@ -25,6 +24,7 @@ const Footer = () => {
                             building modern software.
                         </p>
 
+                        {/* Social Links */}
                         <div className="mt-5 flex items-center justify-center gap-5 lg:justify-start">
                             <a
                                 href="https://github.com"
@@ -35,7 +35,7 @@ const Footer = () => {
                                 GitHub
                             </a>
 
-                            <span className="hidden text-gray-400 lg:block">•</span>
+                            <span className="text-gray-400">•</span>
 
                             <a
                                 href="https://twitter.com"
@@ -46,7 +46,7 @@ const Footer = () => {
                                 Twitter
                             </a>
 
-                            <span className="hidden text-gray-400 lg:block">•</span>
+                            <span className="text-gray-400">•</span>
 
                             <a
                                 href="https://linkedin.com"
@@ -74,6 +74,7 @@ const Footer = () => {
                                     Home
                                 </a>
                             </li>
+
                             <li>
                                 <a
                                     href="#technologies"
@@ -82,6 +83,7 @@ const Footer = () => {
                                     Technologies
                                 </a>
                             </li>
+
                             <li>
                                 <a
                                     href="#projects"
@@ -108,6 +110,7 @@ const Footer = () => {
                                     About
                                 </a>
                             </li>
+
                             <li>
                                 <a
                                     href="#contact"
@@ -116,6 +119,7 @@ const Footer = () => {
                                     Contact
                                 </a>
                             </li>
+
                             <li>
                                 <a
                                     href="#home"
@@ -142,6 +146,7 @@ const Footer = () => {
                                     Privacy Policy
                                 </a>
                             </li>
+
                             <li>
                                 <a
                                     href="#terms"
@@ -178,7 +183,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </footer>
     );
